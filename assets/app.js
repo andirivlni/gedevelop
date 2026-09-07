@@ -51,9 +51,7 @@ const calculatorData = {
   addons: {
     domain: { name: "Setup Domain & DNS", price: 75000, selected: false },
     resume: { name: "Downloadable Resume (PDF)", price: 50000, selected: false },
-    payment: { name: "Integrasi Payment Gateway", price: 350000, selected: false },
-    maintenance: { name: "Maintenance & Backup Bulanan", price: 150000, selected: false },
-    revision: { name: "Revisi Tambahan Ekstra", price: 50000, count: 0, selected: false }
+    maintenance: { name: "Maintenance & Backup Bulanan", price: 150000, selected: false }
   }
 };
 
@@ -78,13 +76,8 @@ function updateCalculator() {
   Object.keys(calculatorData.addons).forEach(key => {
     const item = calculatorData.addons[key];
     if (item.selected) {
-      let itemPrice = item.price;
-      let label = item.name;
-      if (key === 'revision' && item.count > 0) {
-        itemPrice = item.price * item.count;
-        label = `Revisi Tambahan (${item.count}x)`;
-      }
-
+      const itemPrice = item.price;
+      const label = item.name;
       total += itemPrice;
 
       const li = document.createElement('li');
@@ -119,12 +112,8 @@ function sendCalculatorOrder() {
         message += `\n*Layanan Tambahan (Add-Ons):*\n`;
         hasAddons = true;
       }
-      let itemPrice = item.price;
-      let label = item.name;
-      if (key === 'revision' && item.count > 0) {
-        itemPrice = item.price * item.count;
-        label = `Revisi Tambahan (${item.count}x)`;
-      }
+      const itemPrice = item.price;
+      const label = item.name;
       total += itemPrice;
       message += `• ${label}: +${formatRupiah(itemPrice)}\n`;
     }
@@ -219,25 +208,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = e.target.getAttribute('data-addon-key');
       if (calculatorData.addons[key]) {
         calculatorData.addons[key].selected = e.target.checked;
-        if (key === 'revision') {
-          const revCountInput = document.getElementById('calc-revision-count');
-          calculatorData.addons.revision.count = e.target.checked ? Math.max(1, parseInt(revCountInput?.value || 1, 10)) : 0;
-          if (revCountInput) revCountInput.disabled = !e.target.checked;
-        }
       }
       updateCalculator();
     });
   });
-
-  // Revision Count
-  const revisionCountInput = document.getElementById('calc-revision-count');
-  if (revisionCountInput) {
-    revisionCountInput.addEventListener('input', (e) => {
-      const val = parseInt(e.target.value, 10) || 1;
-      calculatorData.addons.revision.count = Math.max(1, val);
-      updateCalculator();
-    });
-  }
 
   // FAQ Accordion
   const accordionButtons = document.querySelectorAll('.accordion-toggle');
