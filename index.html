@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>GEDEVELOP - Jasa Pembuatan Website Profesional & Terpercaya</title>
+  <meta name="description" content="Solusi pembuatan website profesional, cepat, dan responsif untuk personal portfolio, UMKM, hingga web app kustom oleh GEDEVELOP.">
+  
+  <!-- Favicon (Rounded Corners) -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDF2F4',
+              100: '#FCE7EA',
+              200: '#F8D0D6',
+              300: '#F2A9B5',
+              400: '#E6697F',
+              500: '#C42343',
+              600: '#A81B34',
+              700: '#8B1528', // Warna Brand Sesuai Logo
+              800: '#670D1D',
+              900: '#480612',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            accent: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="bg-white text-zinc-800 antialiased selection:bg-brand-100 selection:text-brand-900 pb-20 md:pb-0">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-brand-50 border-b border-brand-100 text-brand-900 text-xs sm:text-sm py-2 px-4 text-center font-medium flex items-center justify-center gap-1.5 sm:gap-2">
+    <i data-lucide="shield-check" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-700 shrink-0"></i>
+    <span class="truncate sm:whitespace-normal">Konsultasi Bebas Biaya • Garansi Bug 30 Hari</span>
+  </div>
+
+  <!-- NAVIGATION (TOP DESKTOP & MOBILE HEADER) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 sm:h-18 py-2.5 sm:py-3">
+        
+        <!-- Logo & Brand Name -->
+        <a href="#" class="flex items-center gap-2.5 sm:gap-3">
+          <img src="assets/favicon.png" alt="GEDEVELOP Logo" class="h-8 sm:h-9 w-auto object-contain rounded-lg">
+          <span class="font-extrabold text-lg sm:text-xl tracking-[0.16em] sm:tracking-[0.18em] text-brand-700 uppercase">
+            GEDEVELOP
+          </span>
+        </a>
+
+        <!-- Desktop Menu Links (Visible on Tablet/Desktop) -->
+        <nav class="hidden md:flex items-center space-x-6 lg:space-x-7 text-sm font-medium text-zinc-600">
+          <a href="#layanan" class="hover:text-brand-700 transition">Paket & Harga</a>
+          <a href="#addons" class="hover:text-brand-700 transition">Add-Ons</a>
+          <a href="#kalkulator" class="hover:text-brand-700 transition flex items-center gap-1.5">
+            <i data-lucide="calculator" class="w-4 h-4 text-brand-700"></i>
+            Kalkulator Biaya
+          </a>
+          <a href="#alur" class="hover:text-brand-700 transition">Alur Kerja</a>
+          <a href="#snk" class="hover:text-brand-700 transition">S&K</a>
+          <a href="form-order.html" class="hover:text-brand-700 transition font-semibold text-brand-700 flex items-center gap-1">
+            <i data-lucide="clipboard-list" class="w-4 h-4"></i> Form Order
+          </a>
+          <a href="#faq" class="hover:text-brand-700 transition">FAQ</a>
+        </nav>
+
+        <!-- Header Action Button (Desktop & Mobile Quick Action) -->
+        <div class="flex items-center gap-2">
+          <button onclick="openWhatsApp('Halo GEDEVELOP, saya ingin konsultasi mengenai pembuatan website.')" 
+            class="px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs font-bold btn-primary flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
+            <span class="hidden sm:inline">Konsultasi WhatsApp</span>
+            <span class="sm:hidden">Chat WA</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="py-12 sm:py-20 lg:py-24 bg-subtle-pattern border-b border-zinc-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-5 sm:space-y-6">
+        
+        <!-- Minimalist Badge -->
+        <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1 rounded-full text-xs font-semibold badge-soft">
+          <i data-lucide="code" class="w-3.5 h-3.5 text-brand-700"></i>
+          <span>Web Development Studio</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-3xl sm:text-5xl sm:leading-tight lg:text-6xl font-extrabold text-zinc-900 tracking-tight leading-snug">
+          Website Profesional, Cepat, & <br class="hidden sm:inline">
+          <span class="text-brand-700">Mudah Digunakan</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-sm sm:text-base lg:text-lg text-zinc-600 max-w-2xl mx-auto leading-relaxed px-2">
+          Solusi pembuatan website bersih, modern, dan responsif untuk personal branding, bisnis UMKM, hingga sistem aplikasi web kustom dengan harga transparan.
+        </p>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2 sm:pt-4">
+          <a href="#layanan" class="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold btn-primary flex items-center justify-center gap-2 shadow-sm active:scale-98">
+            <span>Lihat Pricelist Paket</span>
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+          <a href="#kalkulator" class="w-full sm:w-auto px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold btn-secondary flex items-center justify-center gap-2 shadow-sm active:scale-98">
+            <i data-lucide="calculator" class="w-4 h-4 text-brand-700"></i>
+            <span>Hitung Estimasi Biaya</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="pt-8 sm:pt-10 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-left">
+          <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-zinc-200 flex items-center gap-2.5 sm:gap-3 shadow-xs">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 shrink-0">
+              <i data-lucide="zap" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-[10px] sm:text-[11px] text-zinc-500">Pengerjaan</div>
+              <div class="text-xs sm:text-xs font-bold text-zinc-900">Mulai 1–2 Hari</div>
+            </div>
+          </div>
+
+          <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-zinc-200 flex items-center gap-2.5 sm:gap-3 shadow-xs">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 shrink-0">
+              <i data-lucide="smartphone" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-[10px] sm:text-[11px] text-zinc-500">Tampilan Layar</div>
+              <div class="text-xs sm:text-xs font-bold text-zinc-900">100% Responsif</div>
+            </div>
+          </div>
+
+          <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-zinc-200 flex items-center gap-2.5 sm:gap-3 shadow-xs">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 shrink-0">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-[10px] sm:text-[11px] text-zinc-500">Garansi</div>
+              <div class="text-xs sm:text-xs font-bold text-zinc-900">30 Hari Bebas Bug</div>
+            </div>
+          </div>
+
+          <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-zinc-200 flex items-center gap-2.5 sm:gap-3 shadow-xs">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 shrink-0">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-[10px] sm:text-[11px] text-zinc-500">Desain</div>
+              <div class="text-xs sm:text-xs font-bold text-zinc-900">Clean & Fresh</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICELIST & PACKAGES SECTION -->
+    <section id="layanan" class="py-14 sm:py-20 bg-zinc-50/50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <!-- Section Title -->
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-2">
+          <span class="text-xs font-bold tracking-wider text-brand-700 uppercase">Daftar Harga Transparan</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">Pricelist Layanan Web Development</h2>
+          <p class="text-xs sm:text-sm text-zinc-600">Pilih paket yang paling cocok untuk target dan anggaran proyek Anda.</p>
+
+          <!-- Category Filter Tabs -->
+          <div class="pt-4 flex flex-wrap justify-center gap-1.5 sm:gap-2">
+            <button class="filter-tab-btn active px-4 py-2 rounded-full text-xs font-bold" data-category="all">
+              Semua Kategori
+            </button>
+            <button class="filter-tab-btn px-4 py-2 rounded-full text-xs font-semibold" data-category="portfolio">
+              Personal Portfolio
+            </button>
+            <button class="filter-tab-btn px-4 py-2 rounded-full text-xs font-semibold" data-category="bisnis">
+              Bisnis & UMKM
+            </button>
+            <button class="filter-tab-btn px-4 py-2 rounded-full text-xs font-semibold" data-category="custom">
+              Custom Web App
+            </button>
+          </div>
+        </div>
+
+        <!-- CATEGORY 1: PERSONAL PORTFOLIO -->
+        <div class="mb-12 sm:mb-14 pricing-category-card" data-category="portfolio">
+          <div class="flex items-center gap-2.5 mb-4 sm:mb-5">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 shrink-0">
+              <i data-lucide="user-check" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base sm:text-xl text-zinc-900">1. Kategori: Personal Portfolio (Web CV & Karya)</h3>
+              <p class="text-[11px] sm:text-xs text-zinc-500">Pilihan tepat untuk pelajar, mahasiswa, fresh graduate, desainer, fotografer, maupun developer.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+            
+            <!-- Starter Portfolio -->
+            <div class="clean-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Starter</span>
+                  <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1">
+                    <i data-lucide="clock" class="w-3 h-3"></i> 1 – 2 Hari
+                  </span>
+                </div>
+                <h4 class="font-bold text-lg sm:text-xl text-zinc-900">Starter Portfolio</h4>
+                <p class="text-xs text-zinc-500 mt-1">Website CV satu halaman untuk personal branding instan.</p>
+
+                <div class="my-4 sm:my-5">
+                  <span class="text-2xl sm:text-3xl font-extrabold text-zinc-900">Rp150.000</span>
+                  <span class="text-[11px] text-zinc-500 block mt-0.5">Satu kali bayar (DP 50%)</span>
+                </div>
+
+                <div class="border-t border-zinc-100 pt-4 space-y-2.5 text-xs text-zinc-600">
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span><strong>1 Halaman</strong> (<em>one-page smooth scroll</em>)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Section: Header/Hero, Bio, Skills, Edukasi & Pengalaman, Kontak</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Tampilan responsif (HP, tablet, & desktop)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Deploy gratis via Vercel / Netlify / GitHub Pages</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="orderPackage('Starter Portfolio', 'Rp150.000', '1 – 2 Hari')" class="mt-5 sm:mt-6 w-full py-2.5 rounded-xl text-xs font-bold btn-secondary hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 transition active:scale-98">
+                Pilih Paket Ini
+              </button>
+            </div>
+
+            <!-- Pro Creative Portfolio (POPULAR) -->
+            <div class="featured-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between relative mt-2 md:mt-0">
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-700 text-white flex items-center gap-1 shadow-sm">
+                  <i data-lucide="award" class="w-3 h-3"></i> Pilihan Utama
+                </span>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-center mb-3 mt-1">
+                  <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Pro Creative</span>
+                  <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1">
+                    <i data-lucide="clock" class="w-3 h-3"></i> 3 – 4 Hari
+                  </span>
+                </div>
+                <h4 class="font-bold text-lg sm:text-xl text-zinc-900">Pro Creative Portfolio</h4>
+                <p class="text-xs text-zinc-500 mt-1">Showcase karya interaktif dan estetis untuk kreator.</p>
+
+                <div class="my-4 sm:my-5">
+                  <span class="text-2xl sm:text-3xl font-extrabold text-brand-700">Rp300.000</span>
+                  <span class="text-[11px] text-zinc-500 block mt-0.5">Lengkap dengan modal popup & dark mode</span>
+                </div>
+
+                <div class="border-t border-zinc-100 pt-4 space-y-2.5 text-xs text-zinc-600">
+                  <div class="flex items-start gap-2 text-zinc-900 font-semibold">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Semua fitur Starter Portfolio</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Showcase proyek interaktif (<em>modal/pop-up detail karya</em>)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Tombol Direct to WhatsApp / Email</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Animasi & transisi interaktif modern</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Fitur Toggle Dark/Light Mode</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="orderPackage('Pro Creative Portfolio', 'Rp300.000', '3 – 4 Hari')" class="mt-5 sm:mt-6 w-full py-2.5 rounded-xl text-xs font-bold btn-primary active:scale-98">
+                Pilih Paket Pro
+              </button>
+            </div>
+
+            <!-- Dynamic Portfolio -->
+            <div class="clean-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Dynamic CMS</span>
+                  <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1">
+                    <i data-lucide="clock" class="w-3 h-3"></i> 5 – 7 Hari
+                  </span>
+                </div>
+                <h4 class="font-bold text-lg sm:text-xl text-zinc-900">Dynamic Portfolio</h4>
+                <p class="text-xs text-zinc-500 mt-1">Bisa update portofolio & artikel sendiri lewat mini CMS.</p>
+
+                <div class="my-4 sm:my-5">
+                  <span class="text-2xl sm:text-3xl font-extrabold text-zinc-900">Rp950.000</span>
+                  <span class="text-[11px] text-zinc-500 block mt-0.5">Integrasi Database & Blog</span>
+                </div>
+
+                <div class="border-t border-zinc-100 pt-4 space-y-2.5 text-xs text-zinc-600">
+                  <div class="flex items-start gap-2 text-zinc-900 font-semibold">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Semua fitur Pro Creative</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Integrasi Database / Mini CMS (update karya sendiri)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Section Blog / Artikel / Tulisan</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Bantuan setup custom domain (.com / .my.id)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Panduan dasar pengelolaan konten</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="orderPackage('Dynamic Portfolio', 'Rp950.000', '5 – 7 Hari')" class="mt-5 sm:mt-6 w-full py-2.5 rounded-xl text-xs font-bold btn-secondary hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 transition active:scale-98">
+                Pilih Paket Ini
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CATEGORY 2: BISNIS & UMKM -->
+        <div class="mb-12 sm:mb-14 pricing-category-card" data-category="bisnis">
+          <div class="flex items-center gap-2.5 mb-4 sm:mb-5">
+            <div class="p-2 rounded-lg bg-brand-50 text-brand-700 shrink-0">
+              <i data-lucide="building-2" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-base sm:text-xl text-zinc-900">2. Kategori: Bisnis & UMKM (Website Komersial)</h3>
+              <p class="text-[11px] sm:text-xs text-zinc-500">Layanan digitalisasi untuk menaikkan kredibilitas toko, kafe/resto, agensi, maupun produk lokal.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+            
+            <!-- Landing Page Promosi -->
+            <div class="clean-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Promosi</span>
+                  <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1">
+                    <i data-lucide="clock" class="w-3 h-3"></i> 2 – 3 Hari
+                  </span>
+                </div>
+                <h4 class="font-bold text-lg sm:text-xl text-zinc-900">Landing Page Promosi</h4>
+                <p class="text-xs text-zinc-500 mt-1">Fokus pada konversi penjualan produk atau event promosi.</p>
+
+                <div class="my-4 sm:my-5">
+                  <span class="text-2xl sm:text-3xl font-extrabold text-zinc-900">Rp500.000</span>
+                  <span class="text-[11px] text-zinc-500 block mt-0.5">High Conversion Sales Page</span>
+                </div>
+
+                <div class="border-t border-zinc-100 pt-4 space-y-2.5 text-xs text-zinc-600">
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span><strong>1 Halaman</strong> fokus konversi penjualan produk/event</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Tombol Call-to-Action (CTA) langsung ke WhatsApp</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Optimasi kecepatan & tampilan responsif</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="orderPackage('Landing Page Promosi', 'Rp500.000', '2 – 3 Hari')" class="mt-5 sm:mt-6 w-full py-2.5 rounded-xl text-xs font-bold btn-secondary hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 transition active:scale-98">
+                Pilih Paket Ini
+              </button>
+            </div>
+
+            <!-- Company Profile Standard (BEST SELLER) -->
+            <div class="featured-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between relative mt-2 md:mt-0">
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span class="text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-700 text-white flex items-center gap-1 shadow-sm">
+                  <i data-lucide="trending-up" class="w-3 h-3"></i> Paling Populer
+                </span>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-center mb-3 mt-1">
+                  <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Company Profile</span>
+                  <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1">
+                    <i data-lucide="clock" class="w-3 h-3"></i> 5 – 7 Hari
+                  </span>
+                </div>
+                <h4 class="font-bold text-lg sm:text-xl text-zinc-900">Company Profile Standard</h4>
+                <p class="text-xs text-zinc-500 mt-1">Website bisnis resmi 3-5 halaman dengan on-page SEO.</p>
+
+                <div class="my-4 sm:my-5">
+                  <span class="text-2xl sm:text-3xl font-extrabold text-brand-700">Rp1.500.000</span>
+                  <span class="text-[11px] text-zinc-500 block mt-0.5">Lengkap Maps & Kontak Cepat</span>
+                </div>
+
+                <div class="border-t border-zinc-100 pt-4 space-y-2.5 text-xs text-zinc-600">
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span><strong>3 – 5 Halaman</strong> (Beranda, Tentang Kami, Layanan/Menu, Galeri, Kontak)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Integrasi Google Maps & form pesan/inquiry</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>On-page SEO dasar (mudah terindeks Google)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Tombol aksi cepat ke WhatsApp / Telepon</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="orderPackage('Company Profile Standard', 'Rp1.500.000', '5 – 7 Hari')" class="mt-5 sm:mt-6 w-full py-2.5 rounded-xl text-xs font-bold btn-primary active:scale-98">
+                Pilih Paket Compro
+              </button>
+            </div>
+
+            <!-- Katalog / E-Commerce Sederhana -->
+            <div class="clean-card rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-xs font-bold text-zinc-500 uppercase tracking-wider">Toko Online</span>
+                  <span class="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 flex items-center gap-1">
+                    <i data-lucide="clock" class="w-3 h-3"></i> 10 – 14 Hari
+                  </span>
+                </div>
+                <h4 class="font-bold text-lg sm:text-xl text-zinc-900">Katalog / E-Commerce</h4>
+                <p class="text-xs text-zinc-500 mt-1">Galeri produk, checkout WhatsApp & Dashboard Admin.</p>
+
+                <div class="my-4 sm:my-5">
+                  <span class="text-2xl sm:text-3xl font-extrabold text-zinc-900">Rp3.000.000</span>
+                  <span class="text-[11px] text-zinc-500 block mt-0.5">Dashboard kelola produk mandiri</span>
+                </div>
+
+                <div class="border-t border-zinc-100 pt-4 space-y-2.5 text-xs text-zinc-600">
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Galeri produk interaktif + filter kategori</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Keranjang belanja & sistem checkout via WhatsApp</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Dashboard admin untuk kelola stok/harga produk</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Video/dokumen panduan kelola toko</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="orderPackage('Katalog / E-Commerce Sederhana', 'Rp3.000.000', '10 – 14 Hari')" class="mt-5 sm:mt-6 w-full py-2.5 rounded-xl text-xs font-bold btn-secondary hover:bg-brand-50 hover:text-brand-700 hover:border-brand-200 transition active:scale-98">
+                Pilih Paket Ini
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CATEGORY 3: CUSTOM WEB APP -->
+        <div class="pricing-category-card" data-category="custom">
+          <div class="clean-card rounded-2xl p-5 sm:p-8 bg-white border border-zinc-200">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+              <div class="lg:col-span-7 space-y-3.5 sm:space-y-4">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full badge-soft text-xs font-bold">
+                  <i data-lucide="layers" class="w-3.5 h-3.5"></i> Sistem Kustom & Otomasi
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-zinc-900">
+                  3. Kategori: Custom Web App / Sistem Khusus
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+                  Aplikasi berbasis web untuk otomasi kerja internal, inventaris, manajemen data, atau sistem kasir sesuai alur operasional bisnis Anda.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-zinc-700">
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Autentikasi aman & Multi-Role User (Admin, Kasir, Staff, Manajer)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Manajemen data dinamis (CRUD lengkap: Tambah, Edit, Hapus, Filter, Cari)</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Export laporan data ke format PDF / Excel / CSV</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Dashboard visual analitik & rekap ringkasan metrik</span>
+                  </div>
+                  <div class="flex items-start gap-2 sm:col-span-2">
+                    <i data-lucide="check" class="w-4 h-4 text-brand-700 shrink-0 mt-0.5"></i>
+                    <span>Dokumentasi teknis & pendampingan implementasi dasar</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-5 bg-zinc-50 p-5 sm:p-6 rounded-xl border border-zinc-200 text-center sm:text-left flex flex-col justify-between space-y-4 sm:space-y-5">
+                <div>
+                  <span class="text-xs text-zinc-500 font-semibold">Investasi Biaya:</span>
+                  <div class="text-2xl sm:text-3xl font-extrabold text-brand-700 mt-1">Mulai Rp4.500.000</div>
+                  <p class="text-[11px] text-zinc-500 mt-1">*(Disesuaikan modul & kompleksitas data)*</p>
+                  <div class="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-100/70 px-3 py-1 rounded-md">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Estimasi Pengerjaan: 2 – 4 Minggu
+                  </div>
+                </div>
+
+                <button onclick="consultCustomApp()" class="w-full py-3 rounded-xl text-xs font-bold btn-primary flex items-center justify-center gap-2 active:scale-98">
+                  <i data-lucide="message-square" class="w-4 h-4"></i> Konsultasikan Sistem
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADD-ONS SECTION -->
+    <section id="addons" class="py-14 sm:py-20 bg-white border-t border-zinc-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-2">
+          <span class="text-xs font-bold tracking-wider text-brand-700 uppercase">Fitur Pendukung</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">4. Layanan Tambahan (Add-Ons)</h2>
+          <p class="text-xs sm:text-sm text-zinc-600">Layanan ekstra untuk memaksimalkan fungsionalitas website Anda.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          
+          <!-- Add-on 1 -->
+          <div class="clean-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-xs font-bold text-brand-700 flex items-center gap-1">
+                  <i data-lucide="globe" class="w-3.5 h-3.5"></i> Setup Domain
+                </span>
+                <span class="font-extrabold text-base sm:text-lg text-zinc-900">Rp75.000</span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-zinc-900">Setup Domain & DNS</h4>
+              <p class="text-xs text-zinc-500 mt-1.5 leading-relaxed">
+                Sambungkan domain (.com, .id, dll.) ke server/hosting. *(Biaya pembelian domain di luar jasa)*.
+              </p>
+            </div>
+            <button onclick="orderAddon('Setup Domain & DNS', 'Rp75.000')" class="mt-4 sm:mt-5 w-full py-2 rounded-lg text-xs font-semibold btn-secondary hover:bg-brand-50 hover:text-brand-700 flex items-center justify-center gap-1.5 active:scale-98">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i> Pesan Layanan
+            </button>
+          </div>
+
+          <!-- Add-on 2 -->
+          <div class="clean-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-xs font-bold text-brand-700 flex items-center gap-1">
+                  <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Fitur Resume
+                </span>
+                <span class="font-extrabold text-base sm:text-lg text-zinc-900">Rp50.000</span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-zinc-900">Downloadable Resume (PDF)</h4>
+              <p class="text-xs text-zinc-500 mt-1.5 leading-relaxed">
+                Tombol unduh CV otomatis dalam format PDF rapi langsung dari website portfolio.
+              </p>
+            </div>
+            <button onclick="orderAddon('Downloadable Resume (PDF)', 'Rp50.000')" class="mt-4 sm:mt-5 w-full py-2 rounded-lg text-xs font-semibold btn-secondary hover:bg-brand-50 hover:text-brand-700 flex items-center justify-center gap-1.5 active:scale-98">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i> Pesan Layanan
+            </button>
+          </div>
+
+          <!-- Add-on 3 -->
+          <div class="clean-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-xs font-bold text-brand-700 flex items-center gap-1">
+                  <i data-lucide="credit-card" class="w-3.5 h-3.5"></i> Payment Gateway
+                </span>
+                <span class="font-extrabold text-base sm:text-lg text-zinc-900">Rp350.000</span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-zinc-900">Integrasi Payment Gateway</h4>
+              <p class="text-xs text-zinc-500 mt-1.5 leading-relaxed">
+                Pembayaran otomatis QRIS / Virtual Account (Midtrans / Tripay / Xendit).
+              </p>
+            </div>
+            <button onclick="orderAddon('Integrasi Payment Gateway', 'Rp350.000')" class="mt-4 sm:mt-5 w-full py-2 rounded-lg text-xs font-semibold btn-secondary hover:bg-brand-50 hover:text-brand-700 flex items-center justify-center gap-1.5 active:scale-98">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i> Pesan Layanan
+            </button>
+          </div>
+
+          <!-- Add-on 4 -->
+          <div class="clean-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-xs font-bold text-brand-700 flex items-center gap-1">
+                  <i data-lucide="shield" class="w-3.5 h-3.5"></i> Maintenance
+                </span>
+                <span class="font-extrabold text-base sm:text-lg text-zinc-900">Rp150.000<span class="text-xs text-zinc-500 font-normal">/bln</span></span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-zinc-900">Maintenance & Backup Bulanan</h4>
+              <p class="text-xs text-zinc-500 mt-1.5 leading-relaxed">
+                Pemantauan uptime, backup database berkala, dan perbaikan minor rutin.
+              </p>
+            </div>
+            <button onclick="orderAddon('Maintenance & Backup Bulanan', 'Rp150.000/bln')" class="mt-4 sm:mt-5 w-full py-2 rounded-lg text-xs font-semibold btn-secondary hover:bg-brand-50 hover:text-brand-700 flex items-center justify-center gap-1.5 active:scale-98">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i> Langganan
+            </button>
+          </div>
+
+          <!-- Add-on 5 -->
+          <div class="clean-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-xs font-bold text-brand-700 flex items-center gap-1">
+                  <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i> Revisi Tambahan
+                </span>
+                <span class="font-extrabold text-base sm:text-lg text-zinc-900">Rp50.000<span class="text-xs text-zinc-500 font-normal">/revisi</span></span>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-zinc-900">Revisi di Luar Kuota</h4>
+              <p class="text-xs text-zinc-500 mt-1.5 leading-relaxed">
+                Berlaku untuk revisi minor setelah jatah 2x revisi gratis selesai.
+              </p>
+            </div>
+            <button onclick="orderAddon('Revisi Tambahan di Luar Kuota', 'Rp50.000/revisi')" class="mt-4 sm:mt-5 w-full py-2 rounded-lg text-xs font-semibold btn-secondary hover:bg-brand-50 hover:text-brand-700 flex items-center justify-center gap-1.5 active:scale-98">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i> Order Revisi
+            </button>
+          </div>
+
+          <!-- Custom Card -->
+          <div class="bg-brand-50/50 rounded-2xl p-4 sm:p-5 border border-brand-100 flex flex-col justify-center text-center items-center">
+            <i data-lucide="help-circle" class="w-6 h-6 sm:w-7 sm:h-7 text-brand-700 mb-2"></i>
+            <h4 class="font-bold text-xs sm:text-sm text-zinc-900">Butuh Fitur Lain?</h4>
+            <p class="text-xs text-zinc-600 mt-1 mb-3">Kami siap bantu buatkan modul spesifik kebutuhan Anda.</p>
+            <button onclick="openWhatsApp('Halo GEDEVELOP, saya ingin diskusi kebutuhan custom fitur website.')" class="text-xs font-bold text-brand-700 hover:underline flex items-center gap-1">
+              Konsultasikan Sekarang <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALCULATOR SECTION -->
+    <section id="kalkulator" class="py-14 sm:py-20 bg-zinc-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-xl mx-auto mb-8 sm:mb-10 space-y-2">
+          <span class="text-xs font-bold tracking-wider text-brand-700 uppercase">Simulasi Biaya</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight">Kalkulator Estimasi Biaya</h2>
+          <p class="text-xs sm:text-sm text-zinc-600">Pilih paket dan add-on untuk melihat rincian biaya seketika.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 sm:p-8 border border-zinc-200 shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8">
+            
+            <!-- Left Column -->
+            <div class="md:col-span-7 space-y-4 sm:space-y-5">
+              <div>
+                <label for="calc-package-select" class="block text-xs font-bold text-zinc-700 uppercase tracking-wider mb-2">
+                  1. Pilih Paket Website Utama
+                </label>
+                <select id="calc-package-select" class="w-full px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-xl border border-zinc-200 bg-white text-zinc-900 text-xs sm:text-sm font-medium focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+                  <optgroup label="Personal Portfolio">
+                    <option value="150000" data-name="Starter Portfolio" data-category="Personal Portfolio" selected>Starter Portfolio — Rp150.000</option>
+                    <option value="300000" data-name="Pro Creative Portfolio" data-category="Personal Portfolio">Pro Creative Portfolio — Rp300.000</option>
+                    <option value="950000" data-name="Dynamic Portfolio" data-category="Personal Portfolio">Dynamic Portfolio (Mini CMS) — Rp950.000</option>
+                  </optgroup>
+                  <optgroup label="Bisnis & UMKM">
+                    <option value="500000" data-name="Landing Page Promosi" data-category="Bisnis & UMKM">Landing Page Promosi — Rp500.000</option>
+                    <option value="1500000" data-name="Company Profile Standard" data-category="Bisnis & UMKM">Company Profile Standard — Rp1.500.000</option>
+                    <option value="3000000" data-name="Katalog / E-Commerce Sederhana" data-category="Bisnis & UMKM">Katalog / E-Commerce Sederhana — Rp3.000.000</option>
+                  </optgroup>
+                  <optgroup label="Custom Web App">
+                    <option value="4500000" data-name="Custom Web App / Sistem Khusus" data-category="Custom Web App">Custom Web App (Sistem Khusus) — Mulai Rp4.500.000</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-zinc-700 uppercase tracking-wider mb-2">
+                  2. Pilih Layanan Tambahan (Add-Ons)
+                </label>
+                <div class="space-y-2">
+                  
+                  <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl border border-zinc-200 hover:bg-zinc-50 cursor-pointer transition">
+                    <div class="flex items-center gap-2.5 sm:gap-3">
+                      <input type="checkbox" data-addon-key="domain" class="calc-addon-check w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+                      <span class="text-xs font-medium text-zinc-800">Setup Domain & DNS</span>
+                    </div>
+                    <span class="text-xs font-bold text-brand-700">+Rp75.000</span>
+                  </label>
+
+                  <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl border border-zinc-200 hover:bg-zinc-50 cursor-pointer transition">
+                    <div class="flex items-center gap-2.5 sm:gap-3">
+                      <input type="checkbox" data-addon-key="resume" class="calc-addon-check w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+                      <span class="text-xs font-medium text-zinc-800">Downloadable Resume (PDF)</span>
+                    </div>
+                    <span class="text-xs font-bold text-brand-700">+Rp50.000</span>
+                  </label>
+
+                  <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl border border-zinc-200 hover:bg-zinc-50 cursor-pointer transition">
+                    <div class="flex items-center gap-2.5 sm:gap-3">
+                      <input type="checkbox" data-addon-key="payment" class="calc-addon-check w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+                      <span class="text-xs font-medium text-zinc-800">Integrasi Payment Gateway</span>
+                    </div>
+                    <span class="text-xs font-bold text-brand-700">+Rp350.000</span>
+                  </label>
+
+                  <label class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl border border-zinc-200 hover:bg-zinc-50 cursor-pointer transition">
+                    <div class="flex items-center gap-2.5 sm:gap-3">
+                      <input type="checkbox" data-addon-key="maintenance" class="calc-addon-check w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+                      <span class="text-xs font-medium text-zinc-800">Maintenance & Backup Bulanan</span>
+                    </div>
+                    <span class="text-xs font-bold text-brand-700">+Rp150.000/bln</span>
+                  </label>
+
+                  <div class="p-2.5 sm:p-3 rounded-xl border border-zinc-200 flex items-center justify-between">
+                    <label class="flex items-center gap-2.5 sm:gap-3 cursor-pointer">
+                      <input type="checkbox" data-addon-key="revision" class="calc-addon-check w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+                      <span class="text-xs font-medium text-zinc-800">Revisi Ekstra</span>
+                    </label>
+                    <div class="flex items-center gap-2">
+                      <input type="number" id="calc-revision-count" min="1" max="10" value="1" disabled class="w-12 sm:w-14 px-1.5 py-1 text-center rounded border border-zinc-300 text-xs font-bold disabled:opacity-50">
+                      <span class="text-xs font-bold text-brand-700">+Rp50.000/x</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column (Summary) -->
+            <div class="md:col-span-5 bg-zinc-50 p-4 sm:p-6 rounded-xl border border-zinc-200 flex flex-col justify-between">
+              <div>
+                <h4 class="font-bold text-xs sm:text-sm text-zinc-900 pb-2.5 border-b border-zinc-200 flex items-center justify-between">
+                  <span>Rincian Biaya</span>
+                  <i data-lucide="receipt" class="w-4 h-4 text-brand-700"></i>
+                </h4>
+
+                <ul id="calc-breakdown-items" class="mt-3 space-y-1">
+                  <!-- Javascript Injection -->
+                </ul>
+              </div>
+
+              <div class="pt-4 sm:pt-5 border-t border-zinc-200 mt-4 sm:mt-5 space-y-3">
+                <div class="flex justify-between items-baseline">
+                  <span class="text-[11px] sm:text-xs font-bold text-zinc-500 uppercase">Total Estimasi:</span>
+                  <span id="calc-total-display" class="text-xl sm:text-2xl font-extrabold text-brand-700">
+                    Rp150.000
+                  </span>
+                </div>
+
+                <button onclick="sendCalculatorOrder()" class="w-full py-2.5 sm:py-3 rounded-xl text-xs font-bold btn-primary flex items-center justify-center gap-2 active:scale-98">
+                  <i data-lucide="message-square" class="w-4 h-4"></i> Pesan Estimasi via WhatsApp
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORKFLOW SECTION -->
+    <section id="alur" class="py-14 sm:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-2">
+          <span class="text-xs font-bold tracking-wider text-brand-700 uppercase">Alur Pengerjaan</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight">4 Langkah Kerja Mudah</h2>
+          <p class="text-xs sm:text-sm text-zinc-600">Proses simpel dan transparan dari konsep hingga online.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          
+          <div class="clean-card rounded-2xl p-4 sm:p-5 border border-zinc-200">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-700 font-bold flex items-center justify-center text-xs sm:text-sm mb-3">
+              01
+            </div>
+            <h4 class="font-bold text-sm sm:text-base text-zinc-900 mb-1">Diskusi & DP</h4>
+            <p class="text-xs text-zinc-500 leading-relaxed">
+              Konsultasikan kebutuhan, pilih paket, serahkan materi awal, dan konfirmasi DP 50%.
+            </p>
+          </div>
+
+          <div class="clean-card rounded-2xl p-4 sm:p-5 border border-zinc-200">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-700 font-bold flex items-center justify-center text-xs sm:text-sm mb-3">
+              02
+            </div>
+            <h4 class="font-bold text-sm sm:text-base text-zinc-900 mb-1">Desain & Coding</h4>
+            <p class="text-xs text-zinc-500 leading-relaxed">
+              Kami merancang tampilan responsif dan membangun website sesuai jadwal pengerjaan.
+            </p>
+          </div>
+
+          <div class="clean-card rounded-2xl p-4 sm:p-5 border border-zinc-200">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-700 font-bold flex items-center justify-center text-xs sm:text-sm mb-3">
+              03
+            </div>
+            <h4 class="font-bold text-sm sm:text-base text-zinc-900 mb-1">Preview & Revisi</h4>
+            <p class="text-xs text-zinc-500 leading-relaxed">
+              Tinjau hasil website secara online. Disediakan 2x sesi revisi minor untuk penyesuaian.
+            </p>
+          </div>
+
+          <div class="clean-card rounded-2xl p-4 sm:p-5 border border-zinc-200">
+            <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-700 font-bold flex items-center justify-center text-xs sm:text-sm mb-3">
+              04
+            </div>
+            <h4 class="font-bold text-sm sm:text-base text-zinc-900 mb-1">Rilis & Garansi</h4>
+            <p class="text-xs text-zinc-500 leading-relaxed">
+              Pelunasan 50%, serah terima akun penuh, serta masa garansi bug gratis 30 hari.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TERMS & CONDITIONS (S&K) -->
+    <section id="snk" class="py-14 sm:py-20 bg-zinc-50 border-t border-zinc-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-2">
+          <span class="text-xs font-bold tracking-wider text-brand-700 uppercase">Ketentuan Layanan</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight flex items-center justify-center gap-2">
+            <i data-lucide="file-text" class="w-6 h-6 sm:w-7 sm:h-7 text-brand-700"></i>
+            <span>Syarat & Ketentuan Layanan (S&K)</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-zinc-600">Panduan kerjasama profesional demi kenyamanan bersama.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          
+          <div class="bg-white p-4 sm:p-5 rounded-2xl border border-zinc-200">
+            <div class="flex items-center gap-2 mb-2 text-brand-700">
+              <i data-lucide="credit-card" class="w-4 h-4"></i>
+              <h4 class="font-bold text-sm text-zinc-900">Skema Pembayaran</h4>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed">
+              Pembayaran DP sebesar <strong>50%</strong> sebelum proyek dimulai, dan pelunasan <strong>50%</strong> setelah proses preview/demo disetujui sebelum serah terima akun penuh.
+            </p>
+          </div>
+
+          <div class="bg-white p-4 sm:p-5 rounded-2xl border border-zinc-200">
+            <div class="flex items-center gap-2 mb-2 text-brand-700">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              <h4 class="font-bold text-sm text-zinc-900">Hitungan Timeline</h4>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed">
+              Estimasi waktu pengerjaan resmi dihitung sejak seluruh materi (teks, foto, logo, atau data referensi) diserahkan secara lengkap oleh klien.
+            </p>
+          </div>
+
+          <div class="bg-white p-4 sm:p-5 rounded-2xl border border-zinc-200">
+            <div class="flex items-center gap-2 mb-2 text-brand-700">
+              <i data-lucide="check-square" class="w-4 h-4"></i>
+              <h4 class="font-bold text-sm text-zinc-900">Jatah Revisi</h4>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed">
+              Setiap paket mencakup <strong>2x sesi revisi minor</strong> (penyesuaian teks, warna, atau posisi elemen, tidak mencakup perombakan total konsep/arsitektur).
+            </p>
+          </div>
+
+          <div class="bg-white p-4 sm:p-5 rounded-2xl border border-zinc-200">
+            <div class="flex items-center gap-2 mb-2 text-brand-700">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+              <h4 class="font-bold text-sm text-zinc-900">Masa Garansi</h4>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed">
+              Diberikan garansi penanganan <em>bug/error</em> teknis gratis selama <strong>30 hari</strong> setelah serah terima proyek.
+            </p>
+          </div>
+
+          <div class="bg-white p-4 sm:p-5 rounded-2xl border border-zinc-200 md:col-span-2 lg:col-span-2">
+            <div class="flex items-center gap-2 mb-2 text-brand-700">
+              <i data-lucide="server" class="w-4 h-4"></i>
+              <h4 class="font-bold text-sm text-zinc-900">Biaya Pihak Ketiga</h4>
+            </div>
+            <p class="text-xs text-zinc-600 leading-relaxed">
+              Biaya langganan domain, sewa server/hosting berbayar, dan tagihan API pihak ketiga berada di luar harga jasa pembuatan website.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-14 sm:py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-xl mx-auto mb-8 sm:mb-10 space-y-2">
+          <span class="text-xs font-bold tracking-wider text-brand-700 uppercase">FAQ</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight">Pertanyaan yang Sering Diajukan</h2>
+        </div>
+
+        <div class="space-y-3">
+          
+          <div class="border border-zinc-200 rounded-xl overflow-hidden">
+            <button class="accordion-toggle w-full p-4 text-left flex items-center justify-between font-bold text-xs sm:text-sm text-zinc-900 bg-white hover:bg-zinc-50">
+              <span>Apa saja yang perlu saya siapkan sebelum memesan?</span>
+              <i data-lucide="chevron-down" class="accordion-chevron w-4 h-4 text-zinc-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content hidden p-4 text-xs text-zinc-600 border-t border-zinc-100 bg-zinc-50 leading-relaxed">
+              Cukup siapkan teks profil / produk / jasa Anda, foto pendukung, dan logo jika ada. Jika belum lengkap, kami siap membantu mengarahkan struktur kontennya.
+            </div>
+          </div>
+
+          <div class="border border-zinc-200 rounded-xl overflow-hidden">
+            <button class="accordion-toggle w-full p-4 text-left flex items-center justify-between font-bold text-xs sm:text-sm text-zinc-900 bg-white hover:bg-zinc-50">
+              <span>Apakah website ramah bagi pengguna ponsel (Mobile)?</span>
+              <i data-lucide="chevron-down" class="accordion-chevron w-4 h-4 text-zinc-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content hidden p-4 text-xs text-zinc-600 border-t border-zinc-100 bg-zinc-50 leading-relaxed">
+              Pasti. Semua website dibuat 100% responsif agar nyaman dilihat dari smartphone, tablet, laptop, hingga komputer desktop.
+            </div>
+          </div>
+
+          <div class="border border-zinc-200 rounded-xl overflow-hidden">
+            <button class="accordion-toggle w-full p-4 text-left flex items-center justify-between font-bold text-xs sm:text-sm text-zinc-900 bg-white hover:bg-zinc-50">
+              <span>Bagaimana cara melakukan pembayaran?</span>
+              <i data-lucide="chevron-down" class="accordion-chevron w-4 h-4 text-zinc-400 transition-transform"></i>
+            </button>
+            <div class="accordion-content hidden p-4 text-xs text-zinc-600 border-t border-zinc-100 bg-zinc-50 leading-relaxed">
+              Pembayaran dilakukan via Transfer Bank / QRIS dengan skema DP 50% di awal dan pelunasan 50% setelah website siap ditinjau.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & CONSULTATION SECTION -->
+    <section id="kontak" class="py-14 sm:py-20 bg-brand-50/40 border-t border-brand-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="bg-white rounded-2xl p-5 sm:p-10 border border-zinc-200 shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8">
+            
+            <div class="md:col-span-5 space-y-3.5 sm:space-y-4">
+              <div class="flex items-center gap-2.5 sm:gap-3">
+                <img src="assets/favicon.png" alt="GEDEVELOP Logo" class="h-7 sm:h-8 w-auto rounded-lg">
+                <span class="font-extrabold text-base sm:text-lg text-brand-700 tracking-wider uppercase">GEDEVELOP</span>
+              </div>
+
+              <h3 class="font-extrabold text-xl sm:text-2xl text-zinc-900 tracking-tight">Konsultasikan Website Anda</h3>
+              <p class="text-xs text-zinc-600 leading-relaxed">
+                Hubungi kami untuk konsultasi seputar paket, estimasi waktu, atau diskusi konsep website yang ingin Anda buat.
+              </p>
+
+              <div class="space-y-2 pt-1 text-xs text-zinc-700">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="message-square" class="w-4 h-4 text-brand-700"></i>
+                  <span>WhatsApp: <strong>+62 812-3456-7890</strong></span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i data-lucide="mail" class="w-4 h-4 text-brand-700"></i>
+                  <span>Email: <strong>gedevelop.studio@gmail.com</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:col-span-7">
+              <form onsubmit="handleContactForm(event)" class="space-y-3">
+                <div>
+                  <label for="contact-name" class="block text-xs font-bold text-zinc-700 mb-1">Nama Anda *</label>
+                  <input type="text" id="contact-name" required placeholder="Contoh: Budi Santoso" class="w-full px-3.5 py-2.5 rounded-lg border border-zinc-200 text-xs sm:text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+                </div>
+
+                <div>
+                  <label for="contact-category" class="block text-xs font-bold text-zinc-700 mb-1">Kategori Kebutuhan</label>
+                  <select id="contact-category" class="w-full px-3.5 py-2.5 rounded-lg border border-zinc-200 text-xs sm:text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+                    <option value="Personal Portfolio">Personal Portfolio</option>
+                    <option value="Landing Page Promosi">Landing Page Promosi</option>
+                    <option value="Company Profile Standard">Company Profile Standard</option>
+                    <option value="Katalog / E-Commerce">Katalog / E-Commerce</option>
+                    <option value="Custom Web App">Custom Web App</option>
+                    <option value="Diskusi Dulu">Diskusi Ide Dulu</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="contact-notes" class="block text-xs font-bold text-zinc-700 mb-1">Catatan Tambahan (Opsional)</label>
+                  <textarea id="contact-notes" rows="2" placeholder="Tuliskan gambaran singkat website yang Anda inginkan..." class="w-full px-3.5 py-2.5 rounded-lg border border-zinc-200 text-xs sm:text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-xl text-xs font-bold btn-primary flex items-center justify-center gap-2 active:scale-98">
+                  <i data-lucide="send" class="w-4 h-4"></i> Kirim Pesan via WhatsApp
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-zinc-200 py-8 text-center text-xs text-zinc-500">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <img src="assets/favicon.png" alt="GEDEVELOP" class="h-6 w-auto rounded-md">
+        <span class="font-extrabold text-brand-700 tracking-wider">GEDEVELOP</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="index.html" class="hover:text-brand-700">Beranda</a>
+        <a href="#layanan" class="hover:text-brand-700">Paket & Harga</a>
+        <a href="form-order.html" class="hover:text-brand-700 font-semibold text-brand-700">Formulir Pemesanan</a>
+        <a href="#snk" class="hover:text-brand-700">Syarat & Ketentuan</a>
+      </div>
+      <div>
+        &copy; 2026 GEDEVELOP. Solusi Pembuatan Website Profesional & Terpercaya.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM NAVIGATION DOCK (FIXED AT BOTTOM FOR MOBILE) -->
+  <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-t border-zinc-200 mobile-bottom-nav shadow-[0_-4px_20px_rgba(0,0,0,0.06)]">
+    <div class="grid grid-cols-5 items-center justify-around text-center py-1.5 px-1 max-w-md mx-auto">
+      
+      <!-- Nav Item: Home -->
+      <a href="#" class="mobile-nav-item flex flex-col items-center justify-center py-1 text-zinc-600 hover:text-brand-700 active:text-brand-700">
+        <i data-lucide="home" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px] font-semibold leading-tight">Beranda</span>
+      </a>
+
+      <!-- Nav Item: Paket & Harga -->
+      <a href="#layanan" class="mobile-nav-item flex flex-col items-center justify-center py-1 text-zinc-600 hover:text-brand-700 active:text-brand-700">
+        <i data-lucide="layers" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px] font-semibold leading-tight">Paket</span>
+      </a>
+
+      <!-- Nav Item: Kalkulator (Center Highlight Action) -->
+      <a href="#kalkulator" class="mobile-nav-item flex flex-col items-center justify-center -mt-3">
+        <div class="w-11 h-11 rounded-full bg-brand-700 text-white flex items-center justify-center shadow-md shadow-brand-700/30">
+          <i data-lucide="calculator" class="w-5 h-5"></i>
+        </div>
+        <span class="text-[10px] font-bold text-brand-700 mt-0.5 leading-tight">Hitung</span>
+      </a>
+
+      <!-- Nav Item: S&K -->
+      <a href="#snk" class="mobile-nav-item flex flex-col items-center justify-center py-1 text-zinc-600 hover:text-brand-700 active:text-brand-700">
+        <i data-lucide="file-text" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px] font-semibold leading-tight">S&K</span>
+      </a>
+
+      <!-- Nav Item: WhatsApp Direct -->
+      <button onclick="openWhatsApp('Halo GEDEVELOP, saya ingin konsultasi pembuatan website.')" class="mobile-nav-item flex flex-col items-center justify-center py-1 text-emerald-700 hover:text-emerald-800 active:text-emerald-900">
+        <i data-lucide="message-circle" class="w-5 h-5 mb-0.5"></i>
+        <span class="text-[10px] font-semibold leading-tight">Chat WA</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- DESKTOP FLOATING WHATSAPP BUTTON (Visible on Desktop Only) -->
+  <div class="hidden md:block fixed bottom-6 right-6 z-40">
+    <button onclick="openWhatsApp('Halo GEDEVELOP, saya ingin konsultasi mengenai pembuatan website.')" 
+      aria-label="WhatsApp Contact"
+      class="w-13 h-13 p-3.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95">
+      <i data-lucide="message-square" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/app.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>

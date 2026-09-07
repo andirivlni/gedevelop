@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --brand-primary: #8B1528;
+  --brand-primary-hover: #730F20;
+  --brand-soft: #FDF2F4;
+  --brand-border: #F3D9DE;
+  --text-main: #18181B;
+  --text-muted: #52525B;
+  --bg-main: #FFFFFF;
+  --bg-subtle: #FAFAFA;
+}
+
+* {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.brand-font-accent {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Subtle Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F4F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B1528;
+}
+
+/* Clean, crisp card styling */
+.clean-card {
+  background: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  transition: all 0.2s ease;
+}
+
+.clean-card:hover {
+  border-color: #D1D5DB;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.05);
+}
+
+.featured-card {
+  background: #FFFFFF;
+  border: 2px solid #8B1528;
+  box-shadow: 0 12px 24px -8px rgba(139, 21, 40, 0.12);
+}
+
+.featured-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px -8px rgba(139, 21, 40, 0.16);
+}
+
+/* Brand Buttons */
+.btn-primary {
+  background-color: #8B1528 !important;
+  color: #FFFFFF !important;
+  transition: all 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #730F20 !important;
+  box-shadow: 0 4px 12px rgba(139, 21, 40, 0.2);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #18181B;
+  border: 1px solid #E4E4E7;
+  transition: all 0.2s ease;
+}
+.btn-secondary:hover {
+  background-color: #FDF2F4;
+  color: #8B1528;
+  border-color: #F8D0D6;
+}
+
+/* Category Filter Tabs - Bulletproof Active & Hover States */
+.filter-tab-btn {
+  background-color: #FFFFFF;
+  color: #3F3F46;
+  border: 1px solid #E4E4E7;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.filter-tab-btn:hover:not(.active) {
+  background-color: #F4F4F5;
+  color: #18181B;
+  border-color: #D4D4D8;
+}
+
+.filter-tab-btn.active {
+  background-color: #8B1528 !important;
+  color: #FFFFFF !important;
+  border-color: #8B1528 !important;
+  box-shadow: 0 3px 10px rgba(139, 21, 40, 0.25);
+}
+
+.filter-tab-btn.active:hover {
+  background-color: #730F20 !important;
+  color: #FFFFFF !important;
+}
+
+/* Background Subtle Dots */
+.bg-subtle-pattern {
+  background-image: radial-gradient(#E4E4E7 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Badge Soft */
+.badge-soft {
+  background-color: #FDF2F4;
+  color: #8B1528;
+  border: 1px solid #F8D0D6;
+}
+
+/* Mobile Bottom Navigation Safe-area */
+.mobile-bottom-nav {
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+.mobile-nav-item {
+  transition: all 0.15s ease;
+}
+.mobile-nav-item:active {
+  transform: scale(0.92);
+}

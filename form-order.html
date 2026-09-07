@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Formulir Pemesanan & Brief Website - GEDEVELOP</title>
+  <meta name="description" content="Formulir pengisian data dan brief proyek pembuatan website bersama GEDEVELOP.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#FDF2F4',
+              100: '#FCE7EA',
+              200: '#F8D0D6',
+              300: '#F2A9B5',
+              400: '#E6697F',
+              500: '#C42343',
+              600: '#A81B34',
+              700: '#8B1528', // Warna Brand
+              800: '#670D1D',
+              900: '#480612',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="bg-zinc-50 text-zinc-800 antialiased selection:bg-brand-100 selection:text-brand-900 pb-24 md:pb-12">
+
+  <!-- HEADER -->
+  <header class="bg-white border-b border-zinc-200 sticky top-0 z-40">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <img src="assets/favicon.png" alt="GEDEVELOP Logo" class="h-8 w-auto rounded-lg">
+        <span class="font-extrabold text-lg tracking-[0.16em] text-brand-700 uppercase">GEDEVELOP</span>
+      </a>
+      <a href="index.html" class="text-xs font-semibold text-zinc-600 hover:text-brand-700 flex items-center gap-1">
+        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Kembali ke Web
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    
+    <!-- Title & Guidance -->
+    <div class="bg-white p-6 sm:p-8 rounded-2xl border border-zinc-200 shadow-xs mb-6">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full badge-soft text-xs font-bold mb-3">
+        <i data-lucide="clipboard-list" class="w-3.5 h-3.5 text-brand-700"></i>
+        <span>Client Intake & Project Brief</span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 tracking-tight">
+        Formulir Pemesanan & Brief Pembuatan Website
+      </h1>
+      <p class="text-xs sm:text-sm text-zinc-600 mt-2 leading-relaxed">
+        Silakan lengkapi data dan rincian kebutuhan website Anda di bawah ini. Setelah selesai, formulir ini dapat langsung dikirimkan ke WhatsApp resmi <strong>GEDEVELOP</strong> untuk segera diproses.
+      </p>
+
+      <div class="mt-4 pt-4 border-t border-zinc-100 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-zinc-600">
+        <div class="flex items-center gap-2">
+          <i data-lucide="shield-check" class="w-4 h-4 text-brand-700"></i>
+          <span>Garansi Bug 30 Hari</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="clock" class="w-4 h-4 text-brand-700"></i>
+          <span>Pengerjaan Sesuai Timeline</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="credit-card" class="w-4 h-4 text-brand-700"></i>
+          <span>Skema DP 50% & Pelunasan 50%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <form id="order-form" onsubmit="submitClientBrief(event)" class="space-y-6">
+      
+      <!-- SECTION 1: DATA PEMESAN -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-zinc-200 shadow-xs space-y-4">
+        <div class="flex items-center gap-2 pb-3 border-b border-zinc-100">
+          <div class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 flex items-center justify-center font-bold text-xs">
+            01
+          </div>
+          <h2 class="font-bold text-base sm:text-lg text-zinc-900">Informasi Pemesan / Klien</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="client-name" class="block text-xs font-bold text-zinc-700 mb-1">
+              Nama Lengkap Klien *
+            </label>
+            <input type="text" id="client-name" required placeholder="Contoh: Budi Santoso" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+          </div>
+
+          <div>
+            <label for="client-phone" class="block text-xs font-bold text-zinc-700 mb-1">
+              No. WhatsApp Aktif *
+            </label>
+            <input type="tel" id="client-phone" required placeholder="Contoh: 081234567890" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+          </div>
+
+          <div>
+            <label for="client-brand" class="block text-xs font-bold text-zinc-700 mb-1">
+              Nama Usaha / Brand / Nama Website *
+            </label>
+            <input type="text" id="client-brand" required placeholder="Contoh: Toko Kopi Nusantara / Portfolio Budi" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+          </div>
+
+          <div>
+            <label for="client-email" class="block text-xs font-bold text-zinc-700 mb-1">
+              Alamat Email (Opsional)
+            </label>
+            <input type="email" id="client-email" placeholder="Contoh: budi@gmail.com" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: PILIHAN PAKET -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-zinc-200 shadow-xs space-y-4">
+        <div class="flex items-center gap-2 pb-3 border-b border-zinc-100">
+          <div class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 flex items-center justify-center font-bold text-xs">
+            02
+          </div>
+          <h2 class="font-bold text-base sm:text-lg text-zinc-900">Pilihan Paket Layanan</h2>
+        </div>
+
+        <div>
+          <label for="form-package" class="block text-xs font-bold text-zinc-700 mb-1.5">
+            Pilih Paket Utama *
+          </label>
+          <select id="form-package" required class="w-full px-3.5 py-3 rounded-xl border border-zinc-200 text-sm font-medium focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none bg-white">
+            <optgroup label="Personal Portfolio">
+              <option value="Starter Portfolio (Rp150.000)" selected>Starter Portfolio — Rp150.000 (1 Halaman CV, 1-2 Hari)</option>
+              <option value="Pro Creative Portfolio (Rp300.000)">Pro Creative Portfolio — Rp300.000 (Showcase Modal + Dark Mode, 3-4 Hari)</option>
+              <option value="Dynamic Portfolio (Rp950.000)">Dynamic Portfolio — Rp950.000 (Mini CMS & Blog, 5-7 Hari)</option>
+            </optgroup>
+            <optgroup label="Bisnis & UMKM">
+              <option value="Landing Page Promosi (Rp500.000)">Landing Page Promosi — Rp500.000 (1 Halaman Sales, 2-3 Hari)</option>
+              <option value="Company Profile Standard (Rp1.500.000)">Company Profile Standard — Rp1.500.000 (3-5 Halaman, 5-7 Hari)</option>
+              <option value="Katalog / E-Commerce Sederhana (Rp3.000.000)">Katalog / E-Commerce Sederhana — Rp3.000.000 (Toko Online + Dashboard, 10-14 Hari)</option>
+            </optgroup>
+            <optgroup label="Sistem Khusus">
+              <option value="Custom Web App (Mulai Rp4.500.000)">Custom Web App / Sistem Khusus — Mulai Rp4.500.000 (2-4 Minggu)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Addons Multi-checkbox -->
+        <div class="pt-2">
+          <label class="block text-xs font-bold text-zinc-700 mb-2">
+            Layanan Tambahan (Centang jika diperlukan):
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+            <label class="flex items-center gap-2.5 p-2.5 rounded-lg border border-zinc-200 hover:bg-zinc-50 cursor-pointer">
+              <input type="checkbox" name="form-addon" value="Setup Domain & DNS (+Rp75.000)" class="w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+              <span>Setup Domain & DNS (+Rp75.000)</span>
+            </label>
+
+            <label class="flex items-center gap-2.5 p-2.5 rounded-lg border border-zinc-200 hover:bg-zinc-50 cursor-pointer">
+              <input type="checkbox" name="form-addon" value="Downloadable Resume PDF (+Rp50.000)" class="w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+              <span>Downloadable Resume PDF (+Rp50.000)</span>
+            </label>
+
+            <label class="flex items-center gap-2.5 p-2.5 rounded-lg border border-zinc-200 hover:bg-zinc-50 cursor-pointer">
+              <input type="checkbox" name="form-addon" value="Integrasi Payment Gateway (+Rp350.000)" class="w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+              <span>Payment Gateway QRIS/VA (+Rp350.000)</span>
+            </label>
+
+            <label class="flex items-center gap-2.5 p-2.5 rounded-lg border border-zinc-200 hover:bg-zinc-50 cursor-pointer">
+              <input type="checkbox" name="form-addon" value="Maintenance & Backup (+Rp150.000/bln)" class="w-4 h-4 rounded text-brand-700 focus:ring-brand-700">
+              <span>Maintenance Bulanan (+Rp150.000/bln)</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: BRIEF & MATERI WEBSITE -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-zinc-200 shadow-xs space-y-4">
+        <div class="flex items-center gap-2 pb-3 border-b border-zinc-100">
+          <div class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 flex items-center justify-center font-bold text-xs">
+            03
+          </div>
+          <h2 class="font-bold text-base sm:text-lg text-zinc-900">Brief & Detail Kebutuhan Website</h2>
+        </div>
+
+        <div>
+          <label for="form-goal" class="block text-xs font-bold text-zinc-700 mb-1">
+            Tujuan Utama Website *
+          </label>
+          <input type="text" id="form-goal" required placeholder="Contoh: Menampilkan portofolio karya / Meningkatkan penjualan produk / Profil perusahaan resmi" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="form-color" class="block text-xs font-bold text-zinc-700 mb-1">
+              Preferensi Nuansa Warna
+            </label>
+            <input type="text" id="form-color" placeholder="Contoh: Maroon & Putih / Biru Navy / Hitam Elegan / Bebas dari desainer" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+          </div>
+
+          <div>
+            <label for="form-reference" class="block text-xs font-bold text-zinc-700 mb-1">
+              Contoh / Referensi Website (Jika Ada)
+            </label>
+            <input type="text" id="form-reference" placeholder="Contoh: apple.com / stripe.com / website kompetitor" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label for="form-drive" class="block text-xs font-bold text-zinc-700 mb-1">
+            Link Folder Aset (Google Drive / Dropbox)
+          </label>
+          <input type="url" id="form-drive" placeholder="Contoh: https://drive.google.com/drive/folders/xxxx (pastikan akses diset 'Anyone with the link')" class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none">
+          <span class="text-[11px] text-zinc-500 block mt-1">
+            *Folder dapat berisi file foto, logo resolusi tinggi, dan dokumen teks deskripsi profil/produk Anda.
+          </span>
+        </div>
+
+        <div>
+          <label for="form-notes" class="block text-xs font-bold text-zinc-700 mb-1">
+            Fitur Spesifik atau Catatan Tambahan
+          </label>
+          <textarea id="form-notes" rows="3" placeholder="Tuliskan jika ada fitur khusus (misal: tombol direct WhatsApp khusus ke nomor CS, form pendaftaran, integrasi maps cabang, dll)..." class="w-full px-3.5 py-2.5 rounded-xl border border-zinc-200 text-sm focus:ring-2 focus:ring-brand-700 focus:border-brand-700 outline-none resize-none"></textarea>
+        </div>
+      </div>
+
+      <!-- SECTION 4: PERSETUJUAN KETENTUAN (S&K) -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-zinc-200 shadow-xs space-y-3">
+        <div class="flex items-center gap-2 pb-3 border-b border-zinc-100">
+          <div class="w-7 h-7 rounded-lg bg-brand-50 text-brand-700 flex items-center justify-center font-bold text-xs">
+            04
+          </div>
+          <h2 class="font-bold text-base sm:text-lg text-zinc-900">Persetujuan Ketentuan Layanan</h2>
+        </div>
+
+        <div class="text-xs text-zinc-600 space-y-1.5 bg-zinc-50 p-3.5 rounded-xl border border-zinc-200 leading-relaxed">
+          <p>• Pembayaran: <strong>DP 50%</strong> sebelum pengerjaan, dan pelunasan <strong>50%</strong> setelah preview disetujui.</p>
+          <p>• Timeline dihitung resmi setelah seluruh materi (teks/foto) diserahkan lengkap.</p>
+          <p>• Termasuk <strong>2x sesi revisi minor</strong> dan <strong>Garansi Penanganan Bug 30 Hari</strong>.</p>
+        </div>
+
+        <label class="flex items-start gap-2.5 pt-1 cursor-pointer">
+          <input type="checkbox" id="form-terms" required class="w-4 h-4 rounded text-brand-700 focus:ring-brand-700 mt-0.5">
+          <span class="text-xs font-medium text-zinc-700">
+            Saya telah membaca dan menyetujui Syarat & Ketentuan layanan GEDEVELOP.
+          </span>
+        </label>
+      </div>
+
+      <!-- ACTION BUTTONS -->
+      <div class="flex flex-col sm:flex-row gap-3 pt-2">
+        <button type="submit" class="w-full sm:flex-1 py-3.5 px-6 rounded-xl text-sm font-bold btn-primary flex items-center justify-center gap-2 shadow-md">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Kirim Brief via WhatsApp</span>
+        </button>
+
+        <button type="button" onclick="copyBriefText()" class="w-full sm:w-auto py-3.5 px-5 rounded-xl text-xs font-semibold btn-secondary flex items-center justify-center gap-2">
+          <i data-lucide="copy" class="w-4 h-4"></i>
+          <span>Salin Teks Brief</span>
+        </button>
+
+        <button type="button" onclick="window.print()" class="w-full sm:w-auto py-3.5 px-5 rounded-xl text-xs font-semibold btn-secondary flex items-center justify-center gap-2">
+          <i data-lucide="printer" class="w-4 h-4"></i>
+          <span>Cetak / PDF</span>
+        </button>
+      </div>
+
+    </form>
+
+  </main>
+
+  <!-- SCRIPT -->
+  <script src="assets/app.js"></script>
+  <script>
+    function generateBriefText() {
+      const name = document.getElementById('client-name').value.trim();
+      const phone = document.getElementById('client-phone').value.trim();
+      const brand = document.getElementById('client-brand').value.trim();
+      const email = document.getElementById('client-email').value.trim();
+      const packageVal = document.getElementById('form-package').value;
+      
+      const addonNodes = document.querySelectorAll('input[name="form-addon"]:checked');
+      const addons = Array.from(addonNodes).map(cb => cb.value);
+
+      const goal = document.getElementById('form-goal').value.trim();
+      const color = document.getElementById('form-color').value.trim() || 'Bebas dari desainer';
+      const ref = document.getElementById('form-reference').value.trim() || '-';
+      const drive = document.getElementById('form-drive').value.trim() || '-';
+      const notes = document.getElementById('form-notes').value.trim() || '-';
+
+      let text = `*FORMULIR PEMESANAN WEBSITE - GEDEVELOP*\n`;
+      text += `━━━━━━━━━━━━━━━━━━━━\n\n`;
+      text += `*1. DATA PEMESAN:*\n`;
+      text += `• Nama Klien: ${name}\n`;
+      text += `• WhatsApp: ${phone}\n`;
+      text += `• Brand / Website: ${brand}\n`;
+      if (email) text += `• Email: ${email}\n`;
+
+      text += `\n*2. PAKET & LAYANAN:*\n`;
+      text += `• Paket Pilihan: ${packageVal}\n`;
+      if (addons.length > 0) {
+        text += `• Add-Ons: ${addons.join(', ')}\n`;
+      } else {
+        text += `• Add-Ons: -\n`;
+      }
+
+      text += `\n*3. DETAIL BRIEF:*\n`;
+      text += `• Tujuan Website: ${goal}\n`;
+      text += `• Nuansa Warna: ${color}\n`;
+      text += `• Referensi: ${ref}\n`;
+      text += `• Link Aset / Drive: ${drive}\n`;
+      text += `• Catatan / Fitur: ${notes}\n\n`;
+      text += `━━━━━━━━━━━━━━━━━━━━\n`;
+      text += `_Saya menyetujui Syarat & Ketentuan Layanan GEDEVELOP._`;
+
+      return text;
+    }
+
+    function submitClientBrief(e) {
+      e.preventDefault();
+      const message = generateBriefText();
+      openWhatsApp(message);
+    }
+
+    function copyBriefText() {
+      const name = document.getElementById('client-name').value.trim();
+      if (!name) {
+        alert('Mohon isi nama Anda terlebih dahulu sebelum menyalin brief.');
+        return;
+      }
+      const message = generateBriefText();
+      navigator.clipboard.writeText(message).then(() => {
+        alert('Format brief berhasil disalin ke clipboard! Anda dapat menempelkannya (paste) di chat atau dokumen.');
+      });
+    }
+
+    window.addEventListener('load', () => {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
