@@ -3,7 +3,7 @@
  */
 
 const GEDEVELOP_CONFIG = {
-  phone: "6281234567890", // Ganti dengan nomor WhatsApp aktif (tanpa tanda + atau spasi)
+  phone: "6285751318497", // Nomor WhatsApp resmi GEDEVELOP
   brandName: "GEDEVELOP"
 };
 
